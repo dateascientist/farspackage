@@ -28,3 +28,6 @@ This package can be installed and loaded with:
 devtools::install_github("ilikefishes/farspackage")
 library(farspackage)
 ```
+
+For more information on functionality and usage, please view the included
+vignette / documentation.
