@@ -16,12 +16,15 @@ knitr::opts_chunk$set(
 
 # farspackage
 
-The goal of farspackage is to ...
+The goal of farspackage was to develop and upload a package for Week #4 of the 
+Coursera course Building R Packages (part of the Mastering Software Development
+in R Specialization).
 
-## Example
+## Installation
 
-This is a basic example which shows you how to solve a common problem:
+This package can be installed and loaded with:
 
-```{r example}
-## basic example code
+```{r eval=FALSE}
+devtools::install_github("ilikefishes/farspackage")
+library(farspackage)
 ```
