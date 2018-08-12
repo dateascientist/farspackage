@@ -1,0 +1,75 @@
+---
+title: "farspackage Information"
+author: "Devan Sperlie"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{farspackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r echo=FALSE, warning=FALSE}
+suppressMessages(library(farspackage))
+suppressMessages(library(dplyr))
+suppressMessages(library(maps))
+```
+
+
+### Package Description
+
+The *farspackage* contains various functions to read from file, summarize, and 
+map data from the US National Highway Traffic Safety Administration's 
+[Fatality Analysis Reporting System](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars)
+
+### farspackage Functions
+
+#### make_filename()
+
+This function will create a file name using the **year** argument that
+will be compatible for use in the other farspackage functions. If a string in
+integer format is passed, it will be converted to an integer to avoid NA's by
+coercion.
+
+```{r}
+make_filename(2014)
+```
+
+#### fars_read()
+
+This function will create a tibble data.frame based on a FARS filename passed
+as the **filename** argument.  If the filename does not exist, an error 
+will be thrown advising it does not exist.
+
+```{r}
+fars_read("accident_2014.csv.bz2")
+```
+
+#### fars_read_years()
+This function will return a list of month and years for all rows that are
+present in a FARS data set. The **years** argument can be a vector or list of year in
+integer format. An error will be thrown if a year and corresponding file does 
+not exist.
+```{r}
+fars_read_years(2014)
+```
+
+#### fars_summarize_years()
+
+This function will return a summary of total number of fatalities per month
+and year. The **years** argument can be a vector or list of year(s) in integer format.
+
+```{r}
+fars_summarize_years(2014)
+```
+
+#### fars_map_state()
+
+This function will create a map of fatal accidents based on the **state.num**
+and **year** arguments. An error will be thrown if an invalid state number
+is provided. A message will also be printed if there are zero fatalities to 
+map.
+
+```{r}
+fars_map_state(1,2014)
+```
+
