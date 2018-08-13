@@ -21,6 +21,9 @@ The *farspackage* contains various functions to read from file, summarize, and
 map data from the US National Highway Traffic Safety Administration's 
 [Fatality Analysis Reporting System](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars)
 
+This data encompasses the yearly data regarding fatal injuries suffered in 
+motor vehicle traffic crashes.
+
 ### farspackage Functions
 
 #### make_filename()

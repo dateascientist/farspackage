@@ -1,7 +1,8 @@
 #' Read & Create FARS Data Frame
 #'
 #' This function will create a tibble data.frame based on a FARS filename passed
-#' as the \code{filename} argument.
+#' as the \code{filename} argument. If the filename does not exist, an error
+#' will be thrown advising it does not exist.
 #'
 #' @param filename A character string providing the FARS filename to read
 #'

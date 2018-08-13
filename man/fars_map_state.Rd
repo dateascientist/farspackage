@@ -16,7 +16,9 @@ This function returns a graphics map object.
 }
 \description{
 This function will create a map of fatal accidents based on the \code{state.num}
-and \code{year} arguments.
+and \code{year} arguments. An error will be thrown if an invalid state number
+is provided. A message will also be printed if there are zero fatalities to
+map.
 }
 \examples{
 \dontrun{fars_map_state(1,2015)}

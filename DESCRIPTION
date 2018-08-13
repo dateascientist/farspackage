@@ -1,6 +1,6 @@
 Package: farspackage
 Title: Building R Packages Final Assignment
-Version: 0.0.0.9000
+Version: 1.0.0.0
 Authors@R: person("Devan", "Sperlie", email = "top.secret@noway.com", role = c("aut", "cre"))
 Description: This package allows you to read, summarize, and map data from the 
     US National Highway Traffic Safety Administration's Fatality Analysis 

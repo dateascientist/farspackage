@@ -14,7 +14,8 @@ This function returns a tibble data frame.
 }
 \description{
 This function will create a tibble data.frame based on a FARS filename passed
-as the \code{filename} argument.
+as the \code{filename} argument. If the filename does not exist, an error
+will be thrown advising it does not exist.
 }
 \examples{
 \dontrun{fars_read("accident_2013.csv.bz2")}

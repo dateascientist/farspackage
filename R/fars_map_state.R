@@ -1,7 +1,9 @@
 #' Create a FARS map by state and year
 #'
 #' This function will create a map of fatal accidents based on the \code{state.num}
-#' and \code{year} arguments.
+#' and \code{year} arguments. An error will be thrown if an invalid state number
+#' is provided. A message will also be printed if there are zero fatalities to
+#' map.
 #'
 #' @param state.num An integer providing the function what state to use.
 #' @param year An integer providing the function what year to use in the filename.

@@ -1,7 +1,9 @@
 #' Create FARS Filename
 #'
 #' This function will create a file name using the \code{year} argument that
-#' will be compatible for use in the other farspackage functions.
+#' will be compatible for use in the other farspackage functions. If a string in
+#' integer format is passed, it will be converted to an integer to avoid NA's by
+#' coercion.
 #'
 #' @param year An integer providing the function what year to use in the filename.
 #'
