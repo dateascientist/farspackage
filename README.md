@@ -1,4 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis Status](https://travis-ci.org/ilikefishes/farspackage.svg?branch=master)](https://travis-ci.org/ilikefishes/farspackage/)
+
 farspackage
 ===========
 
