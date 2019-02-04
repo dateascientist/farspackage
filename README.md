@@ -16,7 +16,7 @@ Installation
 This package can be installed and loaded with:
 
 ``` r
-devtools::install_github("ilikefishes/farspackage")
+devtools::install_github("dateascientist/farspackage")
 library(farspackage)
 ```
 
